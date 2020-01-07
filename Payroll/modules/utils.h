@@ -56,6 +56,15 @@ namespace utils {
             return;
         }
     }
+
+    // This displays the pay-roll results
+    void display_results(double result, double pay, double taxes, int hours) {
+        std::cout << "\n" << GSB << "[ Payroll Results ] ------" << RSTB << std::endl;
+        std::cout << WSB << "- Total hours worked ............................. " << YSB << hours << RSTB << std::endl;
+        std::cout << WSB << "- Total pay-rate ................................ $" << YSB << pay << RSTB << std::endl;
+        std::cout << WSB << "- Total Tax Deductibles ......................... $" << YSB << taxes << RSTB << std::endl;
+        std::cout << WSB << "- Total Payroll ................................. $" << YSB << result << RSTB << "\n" << std::endl;
+    }
 }
 
 #endif //PAYROLL_UTILS_H

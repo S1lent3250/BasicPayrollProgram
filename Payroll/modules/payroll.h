@@ -89,7 +89,7 @@ namespace calc {
                 } else { result = (pay * hours) - taxes; }
 
                 // Display the result banner here.
-                
+                utils::display_results(result, pay, taxes, hours);
             }
     };
 }
